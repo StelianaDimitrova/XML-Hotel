@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hotel SYSTEM "hotel.dtd">
+
+<hotel star_rating="3">
+
+    <room id="r301" type="Единична" view="Да" has_tv="Не">
+        <number>301</number>
+        <price currency="USD">50</price>
+        <cleaning_service>
+            <number_of_maids>1</number_of_maids>
+            <cleaning_duration>20</cleaning_duration>
+            <number_of_cleanings_per_stay>2</number_of_cleanings_per_stay>
+        </cleaning_service>
+        <reservation code="res301">
+            <guest_name>Анна Смирнова</guest_name>
+            <phone_number>089-654-3210</phone_number>
+            <check_in_date>2023-10-15</check_in_date>
+            <check_out_date>2023-10-20</check_out_date>
+        </reservation>
+    </room>
+
+    <room id="r302" type="Двойна" view="Да" has_tv="Не">
+        <number>302</number>
+        <price currency="USD">120</price>
+        <reservation code="res302">
+            <guest_name>Джон Смит</guest_name>
+            <phone_number>+359 88 456 7890</phone_number>
+            <check_in_date>2023-10-18</check_in_date>
+            <check_out_date>2023-10-25</check_out_date>
+        </reservation>
+    </room>
+
+    <room id="r303" type="Студио" view="Да" has_tv="Да">
+        <number>303</number>
+        <price currency="EUR">150</price>
+        <cleaning_service>
+            <number_of_maids>2</number_of_maids>
+            <cleaning_duration>25</cleaning_duration>
+            <number_of_cleanings_per_stay>3</number_of_cleanings_per_stay>
+        </cleaning_service>
+        <reservation code="res303">
+            <guest_name>Петя Иванова</guest_name>
+            <phone_number>+359 88 3334445</phone_number>
+            <check_in_date>2023-11-01</check_in_date>
+            <check_out_date>2023-11-07</check_out_date>
+        </reservation>
+    </room>
+
+    <hall id="h5" type="Спа" fee="Платена" is_available="Да">
+        <name>СПА Център</name>
+        <note>Момент за релаксация!</note>
+        <work_time>10:00 ч. - 20:00 ч.</work_time>
+        <capacity>15</capacity>
+        <activity type="Йога клас">
+            <host>Андрей Сидерский</host>
+            <number_of_people>10</number_of_people>
+            <age_restrictions>16+</age_restrictions>
+            <duration>1.5 часа</duration>
+            <number_of_breaks>1</number_of_breaks>
+        </activity>
+    </hall>
+
+    <hall id="h6" type="Игрална" fee="Безплатна" is_available="Да">
+        <name>Зона за деца</name>
+        <note>Забавление и игри за малките</note>
+        <work_time>9:00 ч. - 18:00 ч.</work_time>
+        <capacity>30</capacity>
+        <activity type="Майсторска работилница">
+            <host>Мая Денева</host>
+            <number_of_people>20</number_of_people>
+            <age_restrictions>4-12 години</age_restrictions>
+            <duration>2 часа</duration>
+            <number_of_breaks>1</number_of_breaks>
+        </activity>
+    </hall>
+
+    <restaurant id="rest3" smoking_allowed="Не">
+        <menu>
+            <dish>
+                <category>Предястия</category>
+                <food_name>Капрезе салата</food_name>
+                <description>Свежи домати, моцарела и босилек, поливани с балсамов оцет</description>
+                <price_of_dish currency="EUR">5</price_of_dish>
+                <amount>150гр</amount>
+            </dish>
+
+            <dish>
+                <category>Основни ястия</category>
+                <food_name>Печено пиле с розмарин</food_name>
+                <description>Сочно печено пиле, подправено с розмарин</description>
+                <price_of_dish currency="EUR">8</price_of_dish>
+                <amount>200гр</amount>
+            </dish>
+
+            <dish>
+                <category>Десерти</category>
+                <food_name>Шоколадово фондю</food_name>
+                <description>Богато шоколадово фондю, сервирано със свежи плодове и маршмелоус</description>
+                <price_of_dish currency="EUR">4</price_of_dish>
+                <amount>250гр</amount>
+            </dish>
+        </menu>
+        <seating_capacity>40</seating_capacity>
+        <opening_hours>10:00 ч. - 22:00 ч.</opening_hours>
+    </restaurant>
+
+</hotel>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hotel SYSTEM "hotel.dtd">
+
+<hotel star_rating="6">
+
+    <room id="r400" type="Двойна" view="Да" has_tv="Да">
+        <number>400</number>
+        <price currency="USD">300.00</price>
+        <cleaning_service>
+            <number_of_maids>3</number_of_maids>
+            <cleaning_duration>3 часа</cleaning_duration>
+            <number_of_cleanings_per_stay>2</number_of_cleanings_per_stay>
+        </cleaning_service>
+        <reservation code="res400">
+            <guest_name>Петър Петров</guest_name>
+            <phone_number>088-789-0123</phone_number>
+            <check_in_date>2023-02-01</check_in_date>
+            <check_out_date>2023-02-07</check_out_date>
+        </reservation>
+    </room>
+
+    <room id="r401" type="Кабана" view="Да" has_tv="Да">
+        <number>401</number>
+        <price currency="USD">500.00</price>
+        <cleaning_service>
+            <number_of_maids>4</number_of_maids>
+            <cleaning_duration>4 часа</cleaning_duration>
+            <number_of_cleanings_per_stay>3</number_of_cleanings_per_stay>
+        </cleaning_service>
+        <reservation code="res401">
+            <guest_name>Елина Генчева</guest_name>
+            <phone_number>088-012-3456</phone_number>
+            <check_in_date>2024-03-15</check_in_date>
+            <check_out_date>2024-03-20</check_out_date>
+        </reservation>
+    </room>
+
+    <hall id="hall1" type="Конферентна" fee="Платена" is_available="Да">
+        <name>Голяма конферентна зала</name>
+        <work_time>9:00 ч. - 18:00 ч.</work_time>
+        <capacity>300</capacity>
+        <activity type="Конференция">
+            <host>Елимекс</host>
+            <number_of_people>200</number_of_people>
+            <age_restrictions>Няма</age_restrictions>
+            <duration>8 часа</duration>
+            <number_of_breaks>3</number_of_breaks>
+        </activity>
+    </hall>
+
+    <hall id="hall2" type="Бална" fee="Платена" is_available="Да">
+        <name>Голяма бална зала</name>
+        <work_time>20:00 ч. - 6:00 ч.</work_time>
+        <capacity>150</capacity>
+        <activity type="Сватба">
+            <host>Мирослав Димитров</host>
+            <number_of_people>100</number_of_people>
+            <age_restrictions>Няма</age_restrictions>
+            <duration>6 часа</duration>
+            <number_of_breaks>0</number_of_breaks>
+        </activity>
+    </hall>
+
+    <restaurant id="rest6" smoking_allowed="Не">
+        <menu>
+            <dish>
+                <category>Предястие</category>
+                <food_name>Сьомга на джаджан</food_name>
+                <description>Сьомга с джаджан, поднесена с лимонов сос</description>
+                <price_of_dish currency="EUR">15.99</price_of_dish>
+                <amount>1</amount>
+            </dish>
+            <dish>
+                <category>Основно ястие</category>
+                <food_name>Стек с маслинов сос</food_name>
+                <description>Стек с маслинов сос и печени картофи</description>
+                <price_of_dish currency="EUR">29.99</price_of_dish>
+                <amount>1</amount>
+            </dish>
+        </menu>
+        <seating_capacity>80</seating_capacity>
+        <opening_hours>18:00 ч. - 23:00 ч.</opening_hours>
+    </restaurant>
+
+    <restaurant id="rest7" smoking_allowed="Да">
+        <menu>
+            <dish>
+                <category>Предястие</category>
+                <food_name>Фурми</food_name>
+                <description>Фурми с козе сирене увити в бекон</description>
+                <price_of_dish currency="EUR">9.99</price_of_dish>
+                <amount>1</amount>
+            </dish>
+            <dish>
+                <category>Основно ястие</category>
+                <food_name>Английски бифтек</food_name>
+                <description>Английски бифтек с розмаринов сос и печени зеленчуци</description>
+                <price_of_dish currency="EUR">25.99</price_of_dish>
+                <amount>1</amount>
+            </dish>
+        </menu>
+        <seating_capacity>60</seating_capacity>
+        <opening_hours>19:00 ч. - 00:00 ч.</opening_hours>
+    </restaurant>
+
+</hotel>

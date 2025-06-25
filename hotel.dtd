@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT hotel (room+, hall*, restaurant*)>
+
+    <!ELEMENT room (number, price, cleaning_service?, reservation)>
+        <!ELEMENT number (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>
+        <!ELEMENT cleaning_service (number_of_maids, cleaning_duration, number_of_cleanings_per_stay)>
+            <!ELEMENT number_of_maids (#PCDATA)>
+            <!ELEMENT cleaning_duration (#PCDATA)>
+            <!ELEMENT number_of_cleanings_per_stay (#PCDATA)>
+        <!ELEMENT reservation (guest_name, phone_number, check_in_date, check_out_date)>
+            <!ELEMENT guest_name (#PCDATA)>
+            <!ELEMENT phone_number (#PCDATA)>
+            <!ELEMENT check_in_date (#PCDATA)>
+            <!ELEMENT check_out_date (#PCDATA)>
+
+    <!ELEMENT hall (name, note?, work_time, capacity, activity*)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT note (#PCDATA)>
+        <!ELEMENT work_time (#PCDATA)>
+        <!ELEMENT capacity (#PCDATA)>
+        <!ELEMENT activity (host+, number_of_people, age_restrictions, duration, number_of_breaks)>
+            <!ELEMENT host (#PCDATA)>
+            <!ELEMENT number_of_people (#PCDATA)>
+            <!ELEMENT age_restrictions (#PCDATA)>
+            <!ELEMENT duration (#PCDATA)>
+            <!ELEMENT number_of_breaks (#PCDATA)>
+            
+    <!ELEMENT restaurant (menu, seating_capacity, opening_hours)>
+        <!ELEMENT menu (dish+)>
+            <!ELEMENT dish (category, food_name, description, price_of_dish, amount)>
+                <!ELEMENT category (#PCDATA)>
+                <!ELEMENT food_name (#PCDATA)>
+                <!ELEMENT description (#PCDATA)>
+                <!ELEMENT price_of_dish (#PCDATA)>
+                <!ELEMENT amount (#PCDATA)>
+        <!ELEMENT seating_capacity (#PCDATA)>
+        <!ELEMENT opening_hours (#PCDATA)>
+
+
+<!ATTLIST hotel star_rating CDATA #REQUIRED>
+
+<!ATTLIST room id ID #REQUIRED>
+<!ATTLIST room type (Единична|Двойна|Двойка|Тройна|Четворна|Студио|Апартамент|Кабана) "Двойна">
+<!ATTLIST room view (Да|Не) "Не">
+<!ATTLIST room has_tv (Да|Не) "Да">
+
+<!ATTLIST price currency CDATA #REQUIRED>
+
+<!ATTLIST reservation code CDATA #REQUIRED>
+
+<!ATTLIST hall id ID #REQUIRED>
+<!ATTLIST hall type (Конферентна|Бална|Спа|Фитнес|Игрална) "Конферентна">
+<!ATTLIST hall fee (Безплатна|Платена) "Безплатна">
+<!ATTLIST hall is_available (Да|Не) "Да">
+
+<!ATTLIST activity type CDATA #REQUIRED>
+
+<!ATTLIST restaurant id ID #REQUIRED>
+<!ATTLIST restaurant smoking_allowed (Да|Не) "Не">
+<!ATTLIST price_of_dish currency CDATA #REQUIRED>

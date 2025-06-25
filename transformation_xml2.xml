@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><hotel>
+    <room>
+        <number>500</number>
+        <price>300.00</price>
+        <cleaning_service>
+            <number_of_maids>3</number_of_maids>
+            <cleaning_duration>2 часа</cleaning_duration>
+            <number_of_cleanings_per_stay>2</number_of_cleanings_per_stay>
+        </cleaning_service>
+        <reservation>
+            <guest_name>Десислава Чолакова</guest_name>
+            <phone_number>088-789-0123</phone_number>
+            <check_in_date>2024-02-01</check_in_date>
+            <check_out_date>2024-02-07</check_out_date>
+        </reservation>
+    </room>
+    <room>
+        <number>501</number>
+        <price>250.00</price>
+        <cleaning_service>
+            <number_of_maids>2</number_of_maids>
+            <cleaning_duration>1 часа</cleaning_duration>
+            <number_of_cleanings_per_stay>2</number_of_cleanings_per_stay>
+        </cleaning_service>
+        <reservation>
+            <guest_name>Ивана Колева</guest_name>
+            <phone_number>088-012-3456</phone_number>
+            <check_in_date>2023-03-15</check_in_date>
+            <check_out_date>2023-03-20</check_out_date>
+        </reservation>
+    </room>
+</hotel>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hotel SYSTEM "hotel.dtd">
+
+<hotel star_rating="5">
+
+    <room id="r101" type="Двойна" view="Да" has_tv="Да">
+        <number>101</number>
+        <price currency="BGN">120</price>
+        <cleaning_service>
+            <number_of_maids>2</number_of_maids>
+            <cleaning_duration>30</cleaning_duration>
+            <number_of_cleanings_per_stay>3</number_of_cleanings_per_stay>
+        </cleaning_service>
+        <reservation code="res101">
+            <guest_name>Иван Иванов</guest_name>
+            <phone_number>+359 88 1234567</phone_number>
+            <check_in_date>2023-12-01</check_in_date>
+            <check_out_date>2023-12-05</check_out_date>
+        </reservation>
+    </room>
+
+    <room id="r102" type="Единична" view="Не" has_tv="Да">
+        <number>102</number>
+        <price currency="BGN">80</price>
+        <reservation code="res102">
+            <guest_name>Петър Петров</guest_name>
+            <phone_number>+359 88 7654321</phone_number>
+            <check_in_date>2023-12-01</check_in_date>
+            <check_out_date>2023-12-03</check_out_date>
+        </reservation>
+    </room>
+
+    <hall id="h1" type="Конферентна" fee="Платена" is_available="Не">
+        <name>Зала 1</name>
+        <work_time>09:00 - 18:00</work_time>
+        <capacity>50</capacity>
+        <activity type="Семинар">
+            <host>Д-р Георги Георгиев</host>
+            <number_of_people>30</number_of_people>
+            <age_restrictions>Няма</age_restrictions>
+            <duration>2 часа</duration>
+            <number_of_breaks>1</number_of_breaks>
+        </activity>
+    </hall>
+
+    <hall id="h2" type="Бална" fee="Безплатна" is_available="Не">
+        <name>Зала 2</name>
+        <work_time>18:00 - 06:00</work_time>
+        <capacity>100</capacity>
+        <activity type="Бал">
+            <host>Мария Маринова</host>
+            <number_of_people>80</number_of_people>
+            <age_restrictions>Над 18 години</age_restrictions>
+            <duration>8 часа</duration>
+            <number_of_breaks>0</number_of_breaks>
+        </activity>
+    </hall>
+
+    <restaurant id="rest1" smoking_allowed="Не">
+        <menu>
+            <dish>
+                <category>Основни ястия</category>
+                <food_name>Пилешки кюфтета</food_name>
+                <description>Поднесени със зеленчуков гарнир</description>
+                <price_of_dish currency="BGN">15</price_of_dish>
+                <amount>200гр</amount>
+            </dish>
+
+            <dish>
+                <category>Десерти</category>
+                <food_name>Тирамису</food_name>
+                <description>Италиански десерт с маскарпоне и еспресо</description>
+                <price_of_dish currency="BGN">8</price_of_dish>
+                <amount>150гр</amount>
+            </dish>
+
+            <dish>
+                <category>Салати</category>
+                <food_name>Шопска салата</food_name>
+                <description>Традиционна българска салата с домати, краставици, лук, чушки и сирене</description>
+                <price_of_dish currency="BGN">6</price_of_dish>
+                <amount>250гр</amount>
+            </dish>
+        </menu>
+        <seating_capacity>80</seating_capacity>
+        <opening_hours>08:00 - 23:00</opening_hours>
+    </restaurant>
+
+</hotel>

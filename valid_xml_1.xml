@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hotel SYSTEM "hotel.dtd">
+
+<hotel star_rating="4">
+
+    <room id="r201" type="Студио" view="Да" has_tv="Да">
+        <number>201</number>
+        <price currency="EUR">180</price>
+        <cleaning_service>
+            <number_of_maids>3</number_of_maids>
+            <cleaning_duration>45 Минути</cleaning_duration>
+            <number_of_cleanings_per_stay>2</number_of_cleanings_per_stay>
+        </cleaning_service>
+        <reservation code="res201">
+            <guest_name>Мария Иванова</guest_name>
+            <phone_number>+359 88 9876543</phone_number>
+            <check_in_date>2023-11-15</check_in_date>
+            <check_out_date>2023-11-20</check_out_date>
+        </reservation>
+    </room>
+
+    <room id="r202" type="Апартамент" view="Не" has_tv="Да">
+        <number>202</number>
+        <price currency="EUR">250</price>
+        <reservation code="res202">
+            <guest_name>Георги Петров</guest_name>
+            <phone_number>+359 88 1112233</phone_number>
+            <check_in_date>2023-11-18</check_in_date>
+            <check_out_date>2023-11-25</check_out_date>
+        </reservation>
+    </room>
+
+    <hall id="h3" type="Спа" fee="Платена" is_available="Да">
+        <name>СПА Зона</name>
+        <note>Пълен релакс и зареждане</note>
+        <work_time>10:00 - 20:00</work_time>
+        <capacity>20</capacity>
+        <activity type="Масаж">
+            <host>Петър Георгиев</host>
+            <number_of_people>1</number_of_people>
+            <age_restrictions>Няма</age_restrictions>
+            <duration>1 час</duration>
+            <number_of_breaks>0</number_of_breaks>
+        </activity>
+    </hall>
+
+    <hall id="h4" type="Фитнес" fee="Безплатна" is_available="Да">
+        <name>Фитнес Зала</name>
+        <note>Тренирай здраво!</note>
+        <work_time>08:00 - 22:00</work_time>
+        <capacity>30</capacity>
+        <activity type="Тренировка">
+            <host>Димитър Йорданов</host>
+            <number_of_people>10</number_of_people>
+            <age_restrictions>Над 16 години</age_restrictions>
+            <duration>2 часа</duration>
+            <number_of_breaks>1</number_of_breaks>
+        </activity>
+    </hall>
+
+    <restaurant id="rest2" smoking_allowed="Да">
+        <menu>
+            <dish>
+                <category>Супи</category>
+                <food_name>Таратор</food_name>
+                <description>Кисело мляко, краставици, копър, орехи</description>
+                <price_of_dish currency="BGN">3</price_of_dish>
+                <amount>300гр</amount>
+            </dish>
+
+            <dish>
+                <category>Основни ястия</category>
+                <food_name>Паста Болонезе</food_name>
+                <description>Спагети, доматен сос, сос Болонезе (кайма, лук, моркови), кашкавал</description>
+                <price_of_dish currency="BGN">12</price_of_dish>
+                <amount>250гр</amount>
+            </dish>
+
+            <dish>
+                <category>Десерти</category>
+                <food_name>Шоколадов мус</food_name>
+                <description>Пухкав крем с натурален белгийски шоколад</description>
+                <price_of_dish currency="BGN">8</price_of_dish>
+                <amount>200гр</amount>
+            </dish>
+        </menu>
+        <seating_capacity>60</seating_capacity>
+        <opening_hours>7:00 - 00:00</opening_hours>
+    </restaurant>
+
+</hotel>

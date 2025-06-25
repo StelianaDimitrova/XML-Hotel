@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hotel SYSTEM "hotel.dtd">
+
+<hotel star_rating="5">
+
+    <room id="r304" type="Двойна" view="Да" has_tv="Да">
+        <number>304</number>
+        <price currency="USD">150.00</price>
+        <cleaning_service>
+            <number_of_maids>2</number_of_maids>
+            <cleaning_duration>2 часа</cleaning_duration>
+            <number_of_cleanings_per_stay>3</number_of_cleanings_per_stay>
+        </cleaning_service>
+        <reservation code="res304">
+            <guest_name>Иван Иванов</guest_name>
+            <phone_number>089-456-7890</phone_number>
+            <check_in_date>2023-01-01</check_in_date>
+            <check_out_date>2023-01-05</check_out_date>
+        </reservation>
+    </room>
+
+    <hall id="h7" type="Конферентна" fee="Платена" is_available="Да">
+        <name>SAP зала</name>
+        <work_time>9:00 ч. - 17:00 ч.</work_time>
+        <capacity>100</capacity>
+        <activity type="Конференция">
+            <host>DICOM</host>
+            <number_of_people>80</number_of_people>
+            <age_restrictions>18+</age_restrictions>
+            <duration>4 часа</duration>
+            <number_of_breaks>2</number_of_breaks>
+        </activity>
+    </hall>
+
+    <restaurant id="rest5" smoking_allowed="Не">
+        <menu>
+            <dish>
+                <category>Предястие</category>
+                <food_name>Брускета</food_name>
+                <description>Препечен хляб с домати и босилек</description>
+                <price_of_dish currency="EUR">8.99</price_of_dish>
+                <amount>3</amount>
+            </dish>
+            <dish>
+                <category>Основно ястие</category>
+                <food_name>Сьомга на скара</food_name>
+                <description>Свежо филе от сьомга на скара поднесена с гарнитура по избор</description>
+                <price_of_dish currency="EUR">19.99</price_of_dish>
+                <amount>1</amount>
+            </dish>
+        </menu>
+        <seating_capacity>50</seating_capacity>
+        <opening_hours>18:00 ч. - 22:00 ч.</opening_hours>
+    </restaurant>
+
+</hotel>

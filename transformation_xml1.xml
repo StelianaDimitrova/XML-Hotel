@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><hotel>
+    <hall>
+        <name>Голяма конферентна зала</name>
+        <work_time>9:00 ч. - 18:00 ч.</work_time>
+        <capacity>300</capacity>
+        <activity>
+            <host>Елимекс</host>
+            <number_of_people>200</number_of_people>
+            <age_restrictions>Няма</age_restrictions>
+            <duration>8 часа</duration>
+            <number_of_breaks>3</number_of_breaks>
+        </activity>
+    </hall>
+    <hall>
+        <name>Голяма бална зала</name>
+        <work_time>20:00 ч. - 6:00 ч.</work_time>
+        <capacity>150</capacity>
+        <activity>
+            <host>Мирослав Димитров</host>
+            <number_of_people>100</number_of_people>
+            <age_restrictions>Няма</age_restrictions>
+            <duration>6 часа</duration>
+            <number_of_breaks>0</number_of_breaks>
+        </activity>
+    </hall>
+</hotel>
